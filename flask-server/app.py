@@ -11,18 +11,18 @@ def flask_mongodb_atlas():
     return "flask mongodb atlas!"
 
 
-# API to add one recipe to database
+# API to add one game to database
 # When testing, must use double quotes in postman for POST body
 @app.route('/addOne', methods=["POST"])
 def addOne():
      input_json = request.get_json(force=True) 
-     dictToReturn = {'name': input_json['name'], 'ingredients': input_json['ingredients'], 'method' : input_json['method']}
+     dictToReturn = {'name': input_json['name'], 'onlinePlayers': input_json['onlinePlayers'], 'playersInLast30Days' : input_json['playersInLast30Days']}
      jsonify_version = jsonify(dictToReturn)
      db.db.collection.insert_one(dictToReturn)
      return jsonify_version
 
 
-# API to retrieve all recipes in DB
+# API to retrieve all games in DB
 @app.route("/getAll")
 def getAll():
     all_docs = db.db.collection.find()
@@ -36,7 +36,7 @@ def getAll():
     return jsonify(data)
         
 
-# API to remove a recipe from the database using the recipe's name
+# API to remove a game from the database using the recipe's name
 # e.g. body might be {"_id": "63089f6c32adbaebfa6e8d06"}
 @app.route('/removeOne', methods=["DELETE"])
 def removeOne():
