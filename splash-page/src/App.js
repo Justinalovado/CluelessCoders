@@ -60,3 +60,5 @@ const fetchGames = async () => {
 }
 
 export default App;
+
+// Modified code from https://github.com/stella0304/CatalystWebappDemp/blob/main/react-web-app/src/App.js

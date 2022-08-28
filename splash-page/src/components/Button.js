@@ -24,3 +24,5 @@ Button.propTypes = {
 }
 
 export default Button;
+
+// Modified code from https://github.com/stella0304/CatalystWebappDemp/blob/main/react-web-app/src/components/Button.js

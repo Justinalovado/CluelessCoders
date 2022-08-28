@@ -24,3 +24,5 @@ const GameBox = ({ game, onAdd, showAdd }) => {
 }
 
 export default GameBox;
+
+// Modified code from https://github.com/stella0304/CatalystWebappDemp/blob/main/react-web-app/src/components/RecipeBox.js

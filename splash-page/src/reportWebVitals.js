@@ -11,3 +11,5 @@ const reportWebVitals = onPerfEntry => {
 };
 
 export default reportWebVitals;
+
+// Taken from https://github.com/stella0304/CatalystWebappDemp/blob/main/react-web-app/src/reportWebVitals.js

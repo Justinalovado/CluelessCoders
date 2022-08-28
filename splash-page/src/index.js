@@ -15,3 +15,5 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// Taken from https://github.com/stella0304/CatalystWebappDemp/blob/main/react-web-app/src/index.js

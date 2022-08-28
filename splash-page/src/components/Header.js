@@ -14,3 +14,5 @@ const Header = ({ onAdd, showAdd }) => {
 }
 
 export default Header;
+
+// Modified code from https://github.com/stella0304/CatalystWebappDemp/blob/main/react-web-app/src/components/Header.js
